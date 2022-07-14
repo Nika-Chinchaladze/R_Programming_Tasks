@@ -1,8 +1,8 @@
 # print mtcars Data_Set:
+Big_Data <- mtcars
 print(Big_Data)
 
 # Check the dimension Of mtcars Data_Set:
-Big_Data <- mtcars
 print(dim(Big_Data))
 
 # print out Column Names:
@@ -13,7 +13,7 @@ print(Column_Names)
 Row_Names <- rownames(Big_Data)
 print(Row_Names)
 
-# --------------------- R Basic Statistics Part: --------------------------
+# --------------------- R Basic Statistics' Part: --------------------------
 # 1) Let Find the largest and smallest value of the variable hp (horsepower):
 print(paste('Largest Horspower:', max(Big_Data$hp)))
 print(paste('Smallest Horspower:', min(Big_Data$hp)))
@@ -57,7 +57,7 @@ print(paste('75 percentile is:', quantile(Big_Data$wt, c(0.75)), 'lbs'))
 print(summary(Big_Data))
 
 
-# ----------------  R Basic Graphics Part: ------------------------------------
+# ----------------  R Basic Graphic's Part: ------------------------------------
 # 7) Lets create Histogram to visualize Cars with their horsepower:
 #    Most Common: Horse Power between 100 and 150
 print(hist(Big_Data$hp, main = 'HorsePower Histogram', xlab = 'HorsePower', ylab = 'Watts Frequency', col = 'lightgreen'))
